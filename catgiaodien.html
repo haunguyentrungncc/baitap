@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Side Navigation Bar</title>
+  <link rel="stylesheet" href="style1.css">
+  <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script>
+    $(document).ready(function(){
+      $(".hamburger").click(function(){
+         $(".wrapper").toggleClass("collapse");
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="header">
+    <img src="img/vnp.jpg">
+    <i class="fas fa-user"> Hau.nguyentrung.ncc@ncc.asia </i>
+  </div>
+  <div class="nav">
+     <ul>
+       <li class="actived"><a href="">HỆ THỐNG</a></li>
+       <li><a href="">KÊ KHAI</a></li>
+       <li><a href="">QUẢN LÍ NHÂN SỰ</a></li>
+       <li><a href="">BÁO CÁO THỐNG KÊ</a></li>
+       <li><a href="">QUẢN LÍ BIÊN LAI</a></li>
+       <li><a href="">TRA CỨU</a></li>
+     </ul>
+  </div>
+<div class="wrapper">
+   <div class="sidebar">
+  <div class="top_navbar">
+    <div class="hamburger">
+       <div class="one"></div>
+       <div class="two"></div>
+       <div class="three"></div>
+    </div>
+  </div>
+  
+      <ul style="margin-top: 50px;">
+        <li><a href="#" class="drop">
+          <span class="icon"><i class="fas fa-book"></i></span>
+          <span class="title">Danh mục hệ thống</span></a></li>
+        <li><a href="#">
+          <span class="icon"><i class="fas fa-file-video"></i></span>
+          <span class="title">Quản lí người dùng</span>
+          </a></li>
+        <li><a href="#">
+          <span class="icon"><i class="fas fa-gear"></i></span>
+          <span class="title">Cài đặt</span>
+          </a></li>
+        <li><a href="#" class="active">
+          <span class="icon"><i class="fas fa-search"></i></span>
+          <span class="title">Tra cứu</span>
+          </a></li>
+    </ul>
+  </div>
+  
+  <div class="main_container">
+    <div class="main">
+      <h1>Danh mục mạng lưới</h1>
+      <hr>
+      <div class="search">
+         <b>Tìm Kiếm :</b>
+         <input type="search" name="search" id="">
+         <button type="submit">
+           <i class="fa fa-search">Tìm kiếm</i>
+         </button>
+      </div>
+      <hr>
+      <div class="file"> 
+       <a href=""><i class="fa fa-file" style="font-size:26px;color: aquamarine;"></i>00-Tổng công ty </a>
+      </div>
+      <div class="file1">
+        <a href=""><i class="fa fa-file" style="font-size:26px;color: aquamarine;margin-left: 81px;"></i> 10-Bưu điện TP Hà Nội </a>
+      </div>
+      <div class="file2">
+        <a href=""><i class="fa fa-file" style="font-size:26px;color: aquamarine; padding: 30px; margin-left: 81px;"></i>1155-Bưu điện trung tâm 6 </a>
+      </div>
+      <div class="file3">
+        <a href=""><i class="fa fa-file" style="font-size:26px;color: aquamarine; padding: -3px; margin-left: 169px;"></i> 127060-KHL Hoàng Mai </a>
+      </div>
+   </div>
+   <div class="content">
+     <h1>THÔNG TIN CHI TIẾT</h1>
+     <hr>
+     <div class="mt" >
+       <b>Mã :</b> <input type="text"  style="width: 30%; margin-left: 99px;"><b style="margin-left: 190px;">Tên :</b> <input type="text" style="width: 30%;" >
+     </div>
+     <div class="dc" >
+      <b>Địa chỉ :</b> <input type="text" style="width: 30%;margin-left: 67px;"> <input type="text" style="margin-left: 15px;width: 20%;"> <input type="text" style="margin-left: 19px;width: 30%;">
+     </div>
+     <div class="dc" >
+      <input type="text" style="width:84%;margin-left: 138px;">
+     </div>
+     <div class="sdt" >
+      <b>Số điện thoại :</b> <input type="text" style="margin-left: 15px;width: 30%" ><b style="margin-left:152px;">Số fex :</b> <input type="text"  style="margin-left: 10px;">
+    </div>
+    <div class="bc" >
+      <b>Loại BC : </b><input type="text" style="margin-left: 59px;width: 30%" ><b style="margin-left:106px;">Phương thức : </b><input type="text"  style="width: 30%">
+    </div>
+    <div class="bh">
+      <b>Cơ quan BHXH :</b> <input type="text" >
+     </div>
+   </div>
+  </div>
+</div>
+  
+</body>
+</html>
